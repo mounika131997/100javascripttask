@@ -1,0 +1,24 @@
+<html>
+        <body>
+            <h2>CONCAT TWO STRINGS</h2>
+            ENTER STRING:<br><br>
+            <input id="h1"type="text"><br><br>
+            <input id="h2"type="text"><br><br>
+            <button onClick="CONCAT()">CONCAT</button><br><br>
+            <div id="demo"></div>
+                <script>
+    
+                function CONCAT()
+                {
+                    var str=document.getElementById("h1").value;
+                    var str2=document.getElementById("h2").value;
+                    document.getElementById("demo").innerHTML="CONCAT TWO STRING :"+str.concat("",str2);
+                    
+    
+                }
+                
+                
+                </script>
+        </body>
+    
+    </html>

@@ -1,0 +1,31 @@
+<html>
+<body>
+    <h2 >PRINT NUMBER OF DAYS IN MONTH</h2>
+    ENTER AMOUNT :<input type="text" id="h1" >
+    <button onClick="NOTES()">NOTES</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        var notes=[2000,500,200,100,50,20,10,5,1];
+        var count=[0];
+        function NOTES()
+        {
+            var amount=document.getElementById("h1").value;
+            for(var i=0;i<9;i++)
+            {
+                if(amount>=notes[i])
+                {
+                    count[i]=amount/notes[i];
+                    amount=amount-count[i]*notes[i];
+                }
+                document.getElementById("demo").innerHTML="CURRENCY COUNT  :<br><br>";
+                if(count[i]!=0)
+                {
+                    document.getElementById("demo").innerHTML=notes[i]+" has  "+count[i]+" count";
+                }
+            }
+           
+        
+        }
+        </script>
+    </body>
+</html>

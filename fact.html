@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h2 > FACTORIAL OF NUMBER</h2>
+    ENTER NUMBER:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">FACT</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function ENTER() 
+        {   var fact=1;
+            var value = parseInt(document.getElementById("h1").value);
+            for (var i=1;i<=value;i++)
+            {
+                fact=fact*i;
+            }
+            document.getElementById("demo").innerHTML="FACTORIAL IS "+fact;
+                    
+        }
+    </script>
+</body>
+
+</html>

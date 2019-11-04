@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <h2>ODD OR EVEN NUMBERS USING SWITCH CASE</h2>
+    NUM:
+    <input type="text" id="h1"><br><br>
+    <button onClick="ENTER()">ENTER</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function ENTER() {
+            var num = parseInt(document.getElementById("h1").value);
+            switch (num%2) {
+                case 0:
+                   
+                    document.getElementById("demo").innerHTML = num+"  IS : <span style='color:red'>EVEN</span>";
+                    break;
+                case 1:
+                    document.getElementById("demo").innerHTML = num+"  IS : <span style='color:red'>ODD</span>";
+                    break;
+                
+                
+            }
+        }
+    </script>
+</body>
+
+</html>

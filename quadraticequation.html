@@ -1,0 +1,42 @@
+<body>
+    <h2>FIND QUADRATIC EQUATION ROOTS (ax2 + bx + c = 0)</h2>
+    ENTER VALUE :<br><br>
+    <input type="text" placeholder="a" id="h1" style="color:rgb(26, 5, 77)"><br><br>
+    <input type="text" placeholder="b" id="h2" style="color:rgb(26, 5, 77)"><br><br>
+    <input type="text" placeholder="c" id="h3" style="color:rgb(26, 5, 77)"><br><br>
+
+    <button onClick="ROOT()">ROOT</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function ROOT() {
+            var a = parseInt(document.getElementById("h1").value);
+            var b =parseInt (document.getElementById("h2").value);
+            var c =parseInt (document.getElementById("h3").value);
+            var numer = (Math.abs(b * b - (4 * a * c)))**(1/2);
+            var denom = 2 * a;
+            if (numer>0)
+            {
+                var rt1 = (-b + numer) / denom;
+                var rt2 = (-b - numer) / denom;
+                document.getElementById("demo").innerHTML = "REAL AND DISTINCT ROOTS ARE:<br><br>  Roots For Quadratic Equation " + a + "x2+" + b + "x+" + c + "= 0  is:" + "(<span style='color:red'>" + rt1 + "," + rt2 + "</span>)";
+                
+            }
+            else if(numer==0)
+            {
+                var rt1 = -b  / denom;
+                var rt2 =rt1;
+                document.getElementById("demo").innerHTML = "REPEATED ROOTS ARE:<br><br> Roots For Quadratic Equation " + a + "x2+" + b + "x+" + c + "= 0  is:" + "(<span style='color:red'>" + rt1 + "," + rt2 + "</span>)";
+              
+            }
+            else 
+            {
+                var rt1 = -b  / denom;
+                var rt2 =  numer / denom;
+                document.getElementById("demo").innerHTML = "COMPLEX ROOTS ARE:<br><br>  Roots For Quadratic Equation " + a + "x2+" + b + "x+" + c + "= 0  is:" + "(<span style='color:red'>" + rt1 + ", i" + rt2 + "</span>)";
+              
+            }
+        }
+    </script>
+</body>
+
+</html>

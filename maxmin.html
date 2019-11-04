@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>FIND MAX AND MIN  USING FUNCTION</h2>
+        ENTER :<br><br>
+        <input id="h1"type="text"><br><br>
+        <input id="h2"type="text"><br><br>
+        <button onClick="ENTER()">MAX</button><br><br>
+        <div id="demo"></div>
+            <script>
+            function ENTER()
+            {
+                var C=document.getElementById("h1").value;
+                var D=document.getElementById("h2").value;
+                document.getElementById("demo").innerHTML="MAXIMUM :<h4> "+Math.max(C,D)+"</h4> <br>"+
+                "MINIMUM :<h4> "+Math.min(C,D)+"</h4>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

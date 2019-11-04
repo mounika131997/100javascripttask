@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <h2>REVERSE ORDER OF WORD </h2>
+    ENTER STRING:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="REVERSEWORDS()">REVERSE-WORDS</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function REVERSEWORDS() {
+            var str = document.getElementById("h1").value;
+            //var revwords=[];
+            str=str.replace(/(^\s*)|(\s*$)/gi,"");//for remove start nd end space
+            str=str.replace(/[ ]{2,}/gi," ");//for remove double space
+            str=str.replace(/\n /,"\n");//for remove newline chararcter
+                document.getElementById("demo").innerHTML=" WORD COUNT :"+str.split(' ').reverse().join(' ');
+                    
+        }
+    </script>
+</body>
+
+</html>

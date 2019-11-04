@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h2 >AREA,DIAMETER,CIRCUMFERENCE OF CIRCLE USING FUNCTION</h2>
+        RADIUS :<br><br>
+        <input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">CIRCLE PROPERTIES</button><br><br>
+        <div id="demo"></div>
+            <script>
+            function AREA(radius)
+            {
+                 return 3.14*radius*radius;
+            }
+            function DIAMETER(radius)
+            {
+                return 2*radius;
+            }
+            function CIRCUMFERENCE(radius)
+            {
+                return 2*3.14*radius;
+            }
+            function ENTER()
+            {
+                var radius=document.getElementById("h1").value;
+                document.getElementById("demo").innerHTML=" AREA :<h4>"+AREA(radius)+"</h4><br><br>"+
+                " DIAMETER :<h4>"+DIAMETER(radius)+"</h4><br><br>"+
+                "CIRCUMFERENCE :<h4> "+CIRCUMFERENCE(radius)+"</h4>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

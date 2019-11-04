@@ -1,0 +1,49 @@
+<html>
+<body>
+    <h2 >ELECTRICITY BILL</h2>
+    CURRENT_UNIT :<br><br>
+    <input type="text" id="h1"><br><br>
+    <button onClick="BILL()">BILL</button><br><br>
+    <div id="demo" ></div>
+    <script>
+
+        function BILL() {
+            var unit = parseInt(document.getElementById("h1").value);
+            if(unit<=50)
+            {
+                alert("For first 50 units Rs. 0.50/unit ");
+                var charge=parseFloat(unit*0.50);
+                var addcharge=charge+(charge*(20/100));
+                document.getElementById("demo").innerHTML="ELECTRICITY CHARGE is :<span style='color:red'>"+charge+" RS</span>"+
+                "<br><br>ADDITIONAL CHARGES OF 20% OF BILL :"+"<span style='color:red'>"+addcharge+" RS</span>";
+            }
+            else if(unit<=150 && unit>=51)
+            {
+                alert("For next 100 units from 50 units Rs. 0.75/unit ");
+                var charge=parseFloat(unit*0.75);
+                var addcharge=charge+(charge*(20/100));
+                document.getElementById("demo").innerHTML="ELECTRICITY CHARGE is :<span style='color:red'>"+charge+" RS</span>"+
+                "<br><br>ADDITIONAL CHARGES OF 20% OF BILL :"+"<span style='color:red'>"+addcharge+" RS</span>";
+            }
+            else if(unit<=250 && unit>=151)
+            {
+                alert("For next 100 units from 150 units Rs. 1.20/unit ");
+                var charge=parseFloat(unit*1.20);
+                var addcharge=charge+(charge*(20/100));
+                document.getElementById("demo").innerHTML="ELECTRICITY CHARGE is :<span style='color:red'>"+charge+" RS</span>"+
+                "<br><br>ADDITIONAL CHARGES OF 20% OF BILL :"+"<span style='color:red'>"+addcharge+" RS</span>";
+            }
+            else if(unit>250)
+            {
+                alert("For unit above 250 Rs. 1.50/unit ");
+                var charge=parseFloat(unit*1.50);
+                var addcharge=charge+(charge*(20/100));
+                document.getElementById("demo").innerHTML="ELECTRICITY CHARGE IS :<span style='color:red'>"+charge+" RS</span>"+
+                "<br><br>ADDITIONAL CHARGES OF 20% OF BILL :"+"<span style='color:red'>"+addcharge+" RS</span>";
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

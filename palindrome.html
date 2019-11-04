@@ -1,0 +1,31 @@
+<html>
+
+<body>
+    <h2>PALINDROME STRING</h2>
+    ENTER STRING:<br><br>
+    <input id="h1" type="text"><span>[only in upper or lower case]</span><br><br>
+    <button onClick="PALINDROME()">PALINDROME</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function PALINDROME() {
+            var str = document.getElementById("h1").value;
+            var revstr=[];
+            length=str.length-1;
+            for(var i=length;i>=0;i--)
+            {
+                revstr.push(str[i]);
+            }
+            if(revstr.join('')==str)
+            {
+                document.getElementById("demo").innerHTML="<span style='color:red'>"+str+"</span> IS PALINDROME";
+                    
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML="<span style='color:red'>"+str+"</span> IS NOT A PALINDROME";
+            }
+        }
+    </script>
+</body>
+
+</html>

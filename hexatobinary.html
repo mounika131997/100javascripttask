@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h2 > HEXADECIMAL TO BINARY</h2>
+    ENTER NUMBER:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">ENTER</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() 
+        {
+            var value = parseInt(document.getElementById("h1").value);
+            var bin=parseInt(value,16).toString(2);
+            document.getElementById("demo").innerHTML="HEXADECIMAL TO BINARY:"+bin;
+                    
+        }
+    </script>
+</body>
+
+</html>

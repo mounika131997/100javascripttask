@@ -1,0 +1,47 @@
+<html>
+
+<body>
+    <h2>PRIME NUMBER USING FUNCTION</h2>
+    VALUE UPTO:<br><br>
+    <input id="h1" type="text"><br><br>
+    <!-- <input id="h2" type="text"><br><br> -->
+    <button onClick="DISPLAY()">PRIME NUMBERS</button><br><br>
+    
+    <div id="demo"></div>
+    <script>
+         
+        function PRIME(value)
+         {
+            for ( var i = 2; i < value; i++ ) 
+            {
+                if ( value % i === 0 ) 
+                {
+                     return false;
+                }
+            }
+            return true;
+        }
+                
+    
+        function DISPLAY()
+        {
+            var input = parseInt(document.getElementById("h1").value);
+            var arr = [2];
+            for ( var i = 3; i < input; i=i+2 ) 
+            {
+                    if ( PRIME(i) ) 
+                    {
+                        arr.push(i);
+                        console.log(arr);
+                    }
+                    
+            }
+            
+            document.getElementById("demo").innerHTML="PRIME NUMBERS :<span>"+arr+"</span>";
+        }
+        
+        
+    </script>
+</body>
+
+</html>

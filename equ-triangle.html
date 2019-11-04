@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2 >AREA OF EQU-TRIANGLE</h2>
+        Side:<input id="h1"type="text"><br><br>
+        <button onClick="AREA()">AREA</button>
+        <div id="two" ></div>
+            <script>
+            function AREA()
+            {
+                var Side=document.getElementById("h1").value;
+                var AREA=(3**1/2)*(parseInt(Side*Side))*1/4;
+                document.getElementById("two").innerHTML="<h2>Area of Equilateral-Triangle  : "+AREA+"</h2>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

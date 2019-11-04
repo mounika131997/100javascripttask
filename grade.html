@@ -1,0 +1,56 @@
+<html>
+    <h2>PERCENTAGE AND GRADE OF STUDENTS</h2>
+    <body>
+        Physics:<input type="text" id="h1"><br><br>
+        Chemistry:<input type="text" id="h2"><br><br>
+        Biology:<input type="text" id="h3"><br><br>
+        Maths:<input type="text" id="h4"><br><br>
+        Computer:<input type="text" id="h5"><br><br>
+        <button onClick="CALCULATE()">CALCULATE</button><br><br>
+        <div id="demo" ></div>
+        <script>
+        function CALCULATE()
+        {
+            var Physics = parseInt(document.getElementById("h1").value);
+            var Chemistry =parseInt (document.getElementById("h2").value);
+            var Biology = parseInt(document.getElementById("h3").value);
+            var Maths =parseInt (document.getElementById("h4").value);
+            var Computer=parseInt(document.getElementById("h5").value)
+            var percentage=parseFloat(Physics+Chemistry+Biology+Maths+Computer)/5;
+            document.getElementById("demo").innerHTML="PERCENTAGE  :<span style='color:red'>"+percentage+" %</span>";
+            if(percentage>=90)
+            {
+                document.getElementById("demo").innerHTML="PERCENTAGE  :<span style='color:red'>"+percentage+" %</span>"+
+               " <br><br>GRADE A"
+            }
+            else if(percentage>=80)
+            {
+                document.getElementById("demo").innerHTML="PERCENTAGE  :<span style='color:red'>"+percentage+" %</span>"+
+               " <br><br>GRADE B"
+            }
+            else if(percentage>=70)
+            {
+                document.getElementById("demo").innerHTML="PERCENTAGE  :<span style='color:red'>"+percentage+" %</span>"+
+               " <br><br>GRADE C"
+            }
+            else if(percentage>=60)
+            {
+                document.getElementById("demo").innerHTML="PERCENTAGE  :<span style='color:red'>"+percentage+" %</span>"+
+               " <br><br>GRADE D"
+            }
+            else if(percentage>=40)
+            {
+                document.getElementById("demo").innerHTML="PERCENTAGE  :<span style='color:red'>"+percentage+" %</span>"+
+               " <br><br>GRADE E"
+            }
+            else if(percentage<40)
+            {
+                document.getElementById("demo").innerHTML="PERCENTAGE  :<span style='color:red'>"+percentage+" %</span>"+
+               " <br><br>GRADE F"
+            }
+        }
+        
+        
+        </script>
+    </body>
+</html>

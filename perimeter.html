@@ -1,0 +1,16 @@
+<body>
+    
+    Enter length of triangle:<input type="text" id="h1">
+    Enter breath of triangle:<input type="text" id="h2">
+    <button onclick="Get1()">Get Perimeter</button>
+    <div id="add" ></div>
+</body>
+<script>
+    function Get1(){
+        var l=parseInt(document.getElementById("h1").value);
+        var b=parseInt(document.getElementById("h2").value);
+        sum=2;
+        result=sum*(l+b);
+        document.getElementById("add").innerHTML=("<h2>"+"Perimeter of rectangle"+" "+result+"</h2>");
+    }
+</script>

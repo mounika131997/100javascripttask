@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h2>MARK CALCULATION</h2>
+        English:<input id="h1"type="text"><br><br>
+        Tamil:<input id="h2"type="text"><br><br>
+        Maths:<input id="h3"type="text"><br><br>
+        Social:<input id="h4"type="text"><br><br>
+        Science:<input id="h5"type="text"><br><br>
+        <button onClick="CALCULATE()">CALCULATE</button>
+        <div id="two" ></div>
+            <script>
+            function CALCULATE()
+            {
+                var English=document.getElementById("h1").value;
+                var Tamil=document.getElementById("h2").value;
+                var Maths=document.getElementById("h3").value;
+                var Social=document.getElementById("h4").value;
+                var Science=document.getElementById("h5").value;
+                var TOTAL=parseInt(English)+parseInt(Tamil)+parseInt(Maths)+parseInt(Social)+parseInt(Science);
+                var AVG=parseFloat(TOTAL/5);
+                var PERC=AVG;
+                document.getElementById("two").innerHTML="<h3>TOTAL : "+TOTAL+"</h3>"+
+                "<h3>AVERAGE : "+AVG+"</h3>"+
+                "<h3>PERCENTAGE : "+PERC+"%</h3>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

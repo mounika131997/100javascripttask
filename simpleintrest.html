@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2 >SIMPLE-INTEREST</h2>
+        P-Principal:<input id="h1"type="text"><br><br>
+        R-Rate:<input id="h2"type="text"><br><br>
+        T-Totalyear:<input id="h3"type="text"><br><br>
+        <button onClick="SIMPLE_INTEREST()">SIMPLE_INTEREST</button>
+        <div id="two" ></div>
+            <script>
+            function SIMPLE_INTEREST()
+            {
+                var Principal=document.getElementById("h1").value;
+                var Rate=document.getElementById("h2").value;
+                var Totalyear=document.getElementById("h3").value;
+                var SI=(parseFloat(Principal)*parseFloat(Rate)*parseInt(Totalyear))/100;
+                document.getElementById("two").innerHTML="<h3>SIMPLE INTEREST : "+SI+"</h3>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

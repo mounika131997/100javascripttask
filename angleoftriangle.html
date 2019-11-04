@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2>Angle of Triangle</h2>
+        Angle1:<input id="h1"type="text"><br><br>
+        Angle2:<input id="h2"type="text"><br><br>
+        <button onClick="ANGLE()">Angle3</button>
+        <div id="two"></div>
+            <script>
+            function ANGLE()
+            {
+                var Angle1=document.getElementById("h1").value;
+                var Angle2=document.getElementById("h2").value;
+                var ANGLE=180-(parseInt(Angle1)+parseInt(Angle2));
+                document.getElementById("two").innerHTML="<h2>Third Angle  : "+ANGLE+"°</h2>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

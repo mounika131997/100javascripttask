@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2 >MAXIMUM BETWEEN TWO NUMBERS USING CONDITIONAL OPERATOR</h2>
+        ENTER THE TWO NUMBER:<br><br>
+        <input id="h1"type="text"><br><br>
+        <input id="h2"type="text"><br><br>
+        <button onClick="MAX()">MAX</button>
+        <div id="two" ></div>
+            <script>
+            function MAX()
+            {
+                var Num1=document.getElementById("h1").value;
+                var Num2=document.getElementById("h2").value;
+                var MAX=(Num1>Num2)?Num1:Num2;
+                document.getElementById("two").innerHTML="<h4>MAXIMUM  : "+MAX+"</h4>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

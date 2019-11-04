@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h2 >FIRST OCCURANCE OF A STRIMG </h2>
+    ENTER STRING:<br><br>
+    <input id="h1" type="text"><br><br>
+    SEARCH STRING:<br><br>
+    <input id="h2" type="text"><br><br>
+    <button onClick="OCCUR()">FIRST-OCCURANCE</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function OCCUR() 
+        {
+            var str = document.getElementById("h1").value;
+            var search=document.getElementById("h2").value;
+            var ocr=str.indexOf(search);
+            document.getElementById("demo").innerHTML="OCCURANCE  :"+ocr;
+                    
+        }
+    </script>
+</body>
+
+</html>

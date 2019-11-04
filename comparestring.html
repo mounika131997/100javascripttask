@@ -1,0 +1,28 @@
+<html>
+        <body>
+            <h2 >COMPARE TWO STRINGS</h2>
+            STRING 1:<input id="h1"type="text"><br><br>
+            STRING 2:<input id="h2"type="text"><br><br>
+            <button onClick="COMPARE()">COMPARE</button><br><br>
+            <div id="demo" ></div>
+            <ul>
+                <li>Returns -1 if str1 is sorted before str2</li>
+                <li>Returns 0 if the two strings are equal</li>
+                <li>Returns 1 if str1 is sorted after str2</li>
+            </ul>
+                <script>
+    
+                function COMPARE()
+                {
+                    var str=document.getElementById("h1").value;
+                    var str2=document.getElementById("h2").value;
+                    document.getElementById("demo").innerHTML="COMPARINSON GIVES  :"+str.localeCompare(str2);
+                    
+    
+                }
+                
+                
+                </script>
+        </body>
+    
+    </html>

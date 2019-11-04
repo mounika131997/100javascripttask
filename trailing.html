@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h2> BOTH TRAILING AND LEADIND SPACE IN  STRING </h2>
+    ENTER STRING:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="REMOVE()">BOTH-SPACE</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function REMOVE() 
+        {
+            var str = document.getElementById("h1").value;
+            str=str.replace(/^\s+|\s+$/g, '');
+            document.getElementById("demo").innerHTML="REMOVE EXTRA SPACE :"+str;
+                    
+        }
+    </script>
+</body>
+
+</html>

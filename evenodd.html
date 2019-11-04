@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2>EVEN OR ODD USING FUNCTION</h2>
+        VALUE :<br><br>
+        <input id="h1"type="text"><br><br>
+        <button onClick="CHECK()">CHECK</button><br><br>
+        <div id="demo"></div>
+            <script>
+                function VERIFY(input)
+                {
+                    if (input%2==0)
+                    {
+                        return 'EVEN';
+                    }
+                    else return 'ODD';
+                }
+            
+            function CHECK()
+            {
+                var input=document.getElementById("h1").value;
+                document.getElementById("demo").innerHTML="<h4>"+VERIFY(input)+"</h4>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

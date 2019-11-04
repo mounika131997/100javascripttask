@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2>AREA OF TRIANGLE</h2>
+        Base:<input id="h1"type="text"><br><br>
+        Height:<input id="h2"type="text"><br><br>
+        <button onClick="AREA()">AREA</button>
+        <div id="two"></div>
+            <script>
+            function AREA()
+            {
+                var Base=document.getElementById("h1").value;
+                var Height=document.getElementById("h2").value;
+                var AREA=1/2*(parseInt(Base)*parseInt(Height));
+                document.getElementById("two").innerHTML="<h2>Area of Triangle  : "+AREA+"</h2>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

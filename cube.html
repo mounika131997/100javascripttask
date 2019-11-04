@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2 >FIND CUBE USING FUNCTION</h2>
+        ENTER :<br><br>
+        <input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">SUBMIT</button>
+        <div id="demo"></div>
+            <script>
+            function Cube(a)
+            {
+                 return a*a*a;
+            }
+            function ENTER()
+            {
+                var C=document.getElementById("h1").value;
+                document.getElementById("demo").innerHTML="<h4> CUBIC VALUE IS   :"+Cube(C)+"</h4>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

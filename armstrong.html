@@ -1,0 +1,64 @@
+<html>
+
+<body>
+    <h2>PRIME,ARMSTRONG,PERFECT NUMBER USING FUNCTION</h2>
+    VALUE :<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="PRIME()">PRIME</button>
+    <button onClick="ARMSTRONG()">ARMSTRONG</button>
+    <button onClick="PERFECT()">PERFECT</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function PRIME() {
+            var input = parseInt(document.getElementById("h1").value);
+            var res = 0;
+            for (var i = 2; i <= input / 2; i++) {
+                if (input % i == 0) 
+                {
+                    res = 1;
+                    break;
+                }
+            }
+            if (res == 0) {
+                document.getElementById("demo").innerHTML = "<span>" + input + " </span>    IS  PRIME";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "<span>" + input + " </span> IS  NOT PRIME";
+            }
+        }
+        function ARMSTRONG() {
+            var input = parseInt(document.getElementById("h1").value);
+            var res = input;
+            var sum = 0;
+            while (input > 0) 
+            {
+                var rem = input % 10;
+                sum = sum + rem * rem * rem;
+                input = parseInt(input / 10);
+            }
+            if (sum == res) {
+                document.getElementById("demo").innerHTML = "<span>" + res + " </span> IS ARMSTRONG";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "<span>" + res + " </span> IS NOT ARMSTRONG";
+            }
+        }
+        function PERFECT() {
+            var input = parseInt(document.getElementById("h1").value);
+            var perf = 0;
+            for (var i = 0; i < input; i++) {
+                if (input % i == 0) {
+                    perf = perf + i;
+                }
+            }
+            if (perf == input) {
+                document.getElementById("demo").innerHTML = "<span>" + input + " </span> IS A PERFECT NUMBER";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "<span>" + input + " </span> IS NOT A PERFECT NUMBER";
+            }
+        }
+    </script>
+</body>
+
+</html>

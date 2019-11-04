@@ -1,0 +1,36 @@
+<html>
+
+<body>
+    <h2>CONVERT TO VISEVERSA CASE STRING</h2>
+    ENTER STRING:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="CONVERT()">CONVERT</button><br><br>
+    <div id="demo" ></div>
+    <script>
+        function CONVERT() {
+            var str = document.getElementById("h1").value;
+            var str2='';
+            for (var i = 0; i < str.length; i++) 
+            {
+                if (str.charAt(i) == '') 
+                {
+                    
+                    str2+=str.charAt(i);
+                }
+                else if (str.charAt(i) === str.charAt(i).toLowerCase()) 
+                {
+                    str2+=str.charAt(i).toUpperCase();
+                }
+                else if (str.charAt(i) === str.charAt(i).toUpperCase()) 
+                {
+                    str2+=str.charAt(i).toLowerCase()
+                }
+               
+               
+            }
+            document.getElementById("demo").innerHTML="CONVERTED STRING  :"+str2;  
+        }
+    </script>
+</body>
+
+</html>

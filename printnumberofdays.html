@@ -1,0 +1,32 @@
+<html>
+        <body>
+            <h2>PRINT NUMBER OF DAYS IN MONTH</h2>
+            <input type="text" id="h1" style="color:rgb(26, 5, 77)">
+            <button onClick="MONTH()">MONTH</button><br><br>
+            <div></div>
+            <script>
+            function MONTH()
+            {
+                var input=document.getElementById("h1").value;
+                var month = new Array(7);
+                month[01]="31 Days";
+                month[02]="28 Days ,for leap year 29 days"
+                month[03]="31 Days"
+                month[04]="30 Days"
+                month[05]="31 Days"
+                month[06]="30 Days"
+                month[07]="31 Days"
+                month[08]="31 Days"
+                month[09]="30 Days"
+                month[10]="31 Days"
+                month[11]="30 Days"
+                month[12]="31 Days"
+               
+                var days=month[input];
+                document.getElementById("demo").innerHTML="MONTH "+input+" HAS :<span style='color:red'><h4>"+days+"</h4</span>";
+    
+    
+            }
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2 >POWER OF ANY NUMBERS</h2>
+        Base:<input id="h1"type="text"><br><br>
+        Power:<input id="h2"type="text"><br><br>
+        <button onClick="POW()">ENTER</button>
+        <div id="two"></div>
+            <script>
+            function POW()
+            {
+                var Base=document.getElementById("h1").value;
+                var Power=document.getElementById("h2").value;
+                var POW=parseInt(Base)**parseInt(Power);
+                document.getElementById("two").innerHTML="<h3>RESULT IS :"+POW+"</h3>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2 >CHECK ALPHABET OR NOT- USING CONDITIONAL OPERATOR</h2>
+        LETTER :<br><br>
+        <input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">CHECK</button>
+        <div id="demo" ></div>
+            <script>
+            function ENTER()
+            {
+                var Letter=document.getElementById("h1").value;
+                var reg=/^[A-Za-z]+$/;
+                var LETTER=(Letter.match(reg))?' AN ALPHABET':'NOT AN ALPHABET';
+                document.getElementById("demo").innerHTML="<h4 >"+Letter+"</h4><h5> IS "+LETTER+" </h5>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>

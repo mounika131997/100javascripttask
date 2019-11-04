@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h2 >LEAP YEAR OR NOT- USING CONDITIONAL OPERATOR</h2>
+        YEAR :<br><br>
+        <input id="h1"type="text"><br><br>
+        <button onClick="ENTER()">CHECK</button>
+        <div id="demo" ></div>
+            <script>
+            function ENTER()
+            {
+                var Year=document.getElementById("h1").value;
+                var LEAP=(Year%4==0 || Year%400==0)?'LEAP':'NOT LEAP';
+                document.getElementById("demo").innerHTML="<h4>"+Year+" IS "+LEAP+" YEAR</h4>";
+            }
+            
+            
+            </script>
+    </body>
+
+</html>
